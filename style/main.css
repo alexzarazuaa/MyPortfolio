@@ -1,0 +1,40 @@
+.header-index{
+    box-sizing: border-box;
+    border-style: solid ;
+    min-height: 120vh;
+    max-height: 120vh;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(177, 166, 166);
+
+}
+
+.main{
+
+        width: 100%;
+        align-items: center;
+        padding-left: 110px;
+        padding-right: 110px;
+        height: 120vh;
+        background-color:sandybrown;
+
+}
+
+.main_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 220px;
+    margin-bottom: 250px;
+    
+}
+
+.main_links_pages{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+ 
