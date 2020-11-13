@@ -1,3 +1,7 @@
+
+/*PAGINA PRINCIPAL*/
+
+
 .header-index{
     box-sizing: border-box;
     border-style: solid ;
@@ -36,5 +40,49 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+/* CONOCIMIENTOS HTML*/
+
+header{
+
+    box-sizing: border-box;
+    height: 110px;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: dimgray;
+    align-items: center;
+    padding-left: 450px;
+    padding-right: 450px;
+    
+}
+
+.list{
+    background-color: chocolate;
+    color: inherit;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+.lenguajes{
+    display:inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+.leng_bd{
+    display:inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
  
