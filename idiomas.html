@@ -8,27 +8,54 @@
     <meta property="og:title" content="Idiomas" />
     <meta name="description" content="Página en relación a los idimoas" />
     <meta name="language" content="ES">
+    <link rel="stylesheet" href="./style/main.css">
 </head>
 
 
 <body itemscope itemtype="https://schema.org/WebPage">
 
 
+    <header>
+        <h1 itemprop="idiomas">Idiomas</h1>
 
-    <h1 itemprop="idiomas">Idiomas</h1>
+        <!-- AÑADIR UN BOTON PARA VOLVER AL MENU PRINCIPAL -->
+    </header>
+
+
 
     <hr>
     <blockquote>
         <main>
 
-            <section itemprop="info">
-                <h3 itemprop="idioma">Inglés
-                </h3>
-                <ul itemprop="lista nivel">
-                    <li itemprop="nivel oral">Oral : Nivel Medio</li>
-                    <li itemprop="nivel Escrito">Escrito : Nivel Medio</li>
-                    <li itemprop="nivel Compresión">Compresión : Nivel Medio</li>
-                </ul>
+            <section itemprop="info" class="idiomas">
+                <article class="idiomas__list">
+                    <h3 itemprop="idioma" class="idiomas__list__tooltip">Inglés
+                        <span class="tooltip__tooltiptext">English</span>
+                    </h3>
+                    <ul itemprop="lista nivel">
+                        <li itemprop="nivel oral">Oral : Nivel Medio</li>
+                        <li itemprop="nivel Escrito">Escrito : Nivel Medio</li>
+                        <li itemprop="nivel Compresión">Compresión : Nivel Medio</li>
+                    </ul>
+                </article>
+
+                <article class="idiomas__list">
+                    
+                    <h3 itemprop="idioma" class="idiomas__list__tooltip">Valencià
+                        <span class="tooltip__tooltiptext">Valencian</span>
+                    </h3>
+                    <h4 itemprop="Castellano">Castellano: competencia bilingüe</h4>
+
+                </article>
+
+                <article class="idiomas__list">
+                    <h3 itemprop="idioma" class="idiomas__list__tooltip">Castellà
+                        <span class="tooltip__tooltiptext">Spanish</span>
+                    </h3>
+                    <h4 itemprop="Castellano">Castellano: competencia bilingüe</h4>
+
+                </article>
+
             </section>
 
 

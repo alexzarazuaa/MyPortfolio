@@ -39,7 +39,7 @@
 
 }
 
-/*DROPDOWN MENU*/
+/*!!DROPDOWN MENU*/
 
 .main{
 
@@ -115,6 +115,9 @@ header{
     justify-content: space-between;
 }
 
+
+/*FORMACIOIN ACADEMICA*/
+
 .titulos{
   display: flex;
   align-items: center;
@@ -129,4 +132,41 @@ header{
   padding: 50px;
   flex: 1;
   margin: 20px;
+}
+
+/*IDIOMAS*/
+
+.idiomas{
+  height: 100vh;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.idiomas__list__tooltip .tooltip__tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.idiomas__list__tooltip:hover .tooltip__tooltiptext {
+  visibility: visible;
+}
+
+.idiomas__list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  border: 15px solid springgreen;
 }
