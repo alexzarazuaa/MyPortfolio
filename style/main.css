@@ -1,4 +1,13 @@
 
+
+/*
+  HACER VARIBALES 
+  POR EJEMPLO PARA TODO LO QUE SEA CENTER YA Q LO USO UNAS 24 VECES
+  COMENTAR EN CSS QUE PARTE ES DE CADA PAGINA O DIVIDIR LOS CSS EN DIFERENTES DOCUMENTOS UNO PARA CADA APARTADO
+
+*/
+
+
 /*PAGINA PRINCIPAL*/
 
 
@@ -42,6 +51,34 @@
 }
 
 /*!!DROPDOWN MENU*/
+
+.description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Redes_Sociales{
+    position: absolute;
+    right: 0;
+    margin-top: 60px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Redes_Sociales a {
+    text-decoration: none;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Redes_Sociales__img {
+  width: 75px;
+}
+
 
 .main{
         width: 100%;
