@@ -5,154 +5,177 @@
   POR EJEMPLO PARA TODO LO QUE SEA CENTER YA Q LO USO UNAS 24 VECES
   COMENTAR EN CSS QUE PARTE ES DE CADA PAGINA O DIVIDIR LOS CSS EN DIFERENTES DOCUMENTOS UNO PARA CADA APARTADO
 
+  ORGANIZARLO PER SECCIONS OJO altres característiques per organitzar el CSS. [0.75]
+
+  UTILIZAR VARIABLES
 */
 
 
 /*PAGINA PRINCIPAL*/
 
-
-
-/*DROPDOWN MENU*/
-
-  .main_links {
-    display: none;
-    position: absolute;
-    background-color: #f44336;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .main_links a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .main_links a:hover {background-color: #f1f1f1}
-  
-  .main:hover .main_links {
-    display: block;
-  }
-  
-  .main:hover .dropbtn {
-    background-color: #3e8e41;
-  }
-
-.header-index{
-    box-sizing: border-box;
-    border-style: solid ;
-
-    display: flex;
-    flex-direction: row;
-    background-color:rgb(177, 166, 166);
-
+* {
+  box-sizing: border-box;
 }
 
-/*!!DROPDOWN MENU*/
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
 
-.description{
+header{
+
+  box-sizing: border-box;
+  height: 110px;
+  width: 100%;
+  color: black;
+  background-color: dimgray;
+  display:inline-flex;
+  justify-content: center;
+}
+
+a{
+display: inline-flex;
+justify-content: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Style the top navigation bar */
+.links {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.links a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.links a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*ROW, DIDE , MAIN*/
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 60%;
+  background-color: white;
+  padding: 20px;
+  height: 73vh;
+}
+
+.image{
+  background-color: black;
+  width: 60%;
+  padding: 10px;
+  height: 60%;
 }
 
 .Redes_Sociales{
-    position: absolute;
-    right: 0;
-    margin-top: 60px;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: row;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Redes_Sociales a {
-    text-decoration: none;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  text-decoration: none;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .Redes_Sociales__img {
-  width: 75px;
+    width: 75px;
 }
+
+.description , .img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+/*FOOTER*/
+footer {
+  padding: 8px;
+  text-align: center;
+  background: #ddd;
+}
+
 
 
 .main{
-        width: 100%;
-        align-items: center;
-        padding-left: 110px;
-        padding-right: 110px;
-        height: 120vh;
-        background-color:sandybrown;
-        position: relative;
-        display: inline-block;
+ width: 100%;
+ align-items: center;
+ padding-left: 110px;
+ padding-right: 110px;
+ background-color: whitesmoke;
+ position: relative;
+ display: inline-block;
 }
 
 .main_links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 220px;
-    margin-bottom: 250px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 220px;
+ margin-bottom: 250px;
     
 }
 
 .main_links_pages{
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/*MAIN BUTTON*/
-a:link, a:visited {
-  background-color: #f44336;
-  color:black;
-  padding: 14px 25px;
   text-align: center;
-  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+
+.list{
+  background-color: chocolate;
+  color: inherit;
   display: flex;
-  align-content: flex-start;
-  
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px;
 }
 
-a:hover, a:active {
-  background-color: red;
-}
 
-/*!!MAIN BUTTON*/
+/*FIN PORTADA*/
 
 
 /* CONOCIMIENTOS HTML*/
-header{
-
-    box-sizing: border-box;
-    height: 110px;
-    width: 100%;
-    color: black;
-    background-color: dimgray;
-    display:inline-flex;
-    justify-content: center;
-}
-a{
-  display: inline-flex;
-  justify-content: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.list{
-    background-color: chocolate;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px;
-}
 
 
 .lenguajes,.forma{
@@ -171,7 +194,6 @@ a{
   align-items: center;
   justify-content: center;
 
-  
 }
 
 
@@ -314,11 +336,11 @@ a{
     display: flex;
     align-items: center;
   }
-  .box3{
+  .box3 {
     display: flex;
     justify-content: flex-end;
     position: relative;
     align-items: center;
     bottom: 360px;
-    right: 10px;
+    right: 100px;
   }
