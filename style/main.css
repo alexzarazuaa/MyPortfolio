@@ -3,15 +3,22 @@
 /*
   HACER VARIBALES 
   POR EJEMPLO PARA TODO LO QUE SEA CENTER YA Q LO USO UNAS 24 VECES
-  COMENTAR EN CSS QUE PARTE ES DE CADA PAGINA O DIVIDIR LOS CSS EN DIFERENTES DOCUMENTOS UNO PARA CADA APARTADO
 
-  ORGANIZARLO PER SECCIONS OJO altres característiques per organitzar el CSS. [0.75]
-
-  UTILIZAR VARIABLES
 */
 
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
 
-/*---------------------PAGINA PRINCIPAL------------------------------------*/
+
+
+/*------------------------------------*\
+  #A-PAGINA PRINCIPAL
+\*------------------------------------*/
+
+/**
+* ALSO THE CLASSES HEADER, HEADER_TITULO , LINKS AND  THE LABEL  A INSIDE LINKS ARE USING IN ALL PORTFOLIO
+*/
 
 * {
   box-sizing: border-box;
@@ -129,12 +136,6 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 }
 
 
-/*FOOTER*/
-footer {
-  padding: 8px;
-  text-align: center;
-  background: #ddd;
-}
 
 
 
@@ -165,6 +166,26 @@ footer {
  }
 
 
+
+
+/*------------------------------------*\
+  #ANOTHER-FOOTER
+\*------------------------------------*/
+
+/*FOOTER*/
+footer {
+  padding: 8px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+
+/*------------------------------------*\
+  #ANOTHER- CONOCIMIENTOS
+\*------------------------------------*/
+
+
 .list{
   background-color: chocolate;
   color: inherit;
@@ -177,13 +198,8 @@ footer {
 }
 
 
-/*-----------------------------------FIN PORTADA---------------------------------*/
 
-
-/*--------------------------------- CONOCIMIENTOS HTML ------------------------*/
-
-
-.lenguajes,.forma{
+.lenguajes{
     display:inline-flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -215,8 +231,9 @@ footer {
 }
 
 
-
-/*------------------------------------FORMACIOIN ACADEMICA ------------------------------------------*/
+/*------------------------------------*\
+  #ANOTHER- FORMACION ACADEMICA
+\*------------------------------------*/
 
 .titulos{
   display: flex;
@@ -239,9 +256,11 @@ footer {
   margin: 20px;
 }
 
+/*------------------------------------*\
+  #ANOTHER- IDIOMAS
+\*------------------------------------*/
 
 
-/*------------------------------IDIOMAS --------------------------------------------------------*/
 
 .idiomas{
   height: 100vh;
@@ -282,7 +301,10 @@ footer {
   border: 15px solid springgreen;
 }
 
-/* --------------------------------------------------------------- */
+/*------------------------------------*\
+  #ANOTHER- EXPERIENCIA LABORAL
+\*------------------------------------*/
+
 
 .experiencia_laboral{
   display: flex;
@@ -301,9 +323,10 @@ footer {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+/*------------------------------------*\
+  #ANOTHER- CONTACTO
+\*------------------------------------*/
 
-
-  /* --------------------------- CONTACTO -------------------------- */
 
 
   .contacto {
@@ -344,5 +367,7 @@ input[type=submit]:hover {
   background-color: darkslategray;
 }
 
+/*------------------------------------*\
+  #FIN
+\*------------------------------------*/
 
-  /*-----------------------------------------------------------------*/
