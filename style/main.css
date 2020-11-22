@@ -1,14 +1,13 @@
 
 
-/*
-  HACER VARIBALES 
-  POR EJEMPLO PARA TODO LO QUE SEA CENTER YA Q LO USO UNAS 24 VECES
-
-*/
-
 /*------------------------------------*\
   #VARIABLES
 \*------------------------------------*/
+:root{
+  --aling-center : center;
+  --ng-color: black;
+  --padding:20px;
+}
 
 
 
@@ -26,8 +25,8 @@
 
 /* Header/logo Title */
 .header {
-  padding: 20px;
-  text-align: center;
+  padding: var(--padding);
+  text-align: var(--aling-center);
   background: #1abc9c;
   color: white;
 }
@@ -37,28 +36,28 @@ header{
   box-sizing: border-box;
   height: 100px;
   width: 100%;
-  color: black;
+  color: var(--ng-color);
   background-color: dimgray;
   display:inline-flex;
-  justify-content: center;
+  justify-content: var(--aling-center);
 }
 .header__titulo{
   display: flex;
-  align-items: center;
+  align-items: var(--aling-center);
   margin-top: 10px;
 }
 
 a{
 display: inline-flex;
-justify-content: center;
+justify-content: var(--aling-center);
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Style the top navigation bar */
 .links {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: var(--aling-center);
+  align-items: var(--aling-center);
   background-color: #333;
 }
 
@@ -67,13 +66,13 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
   color: white;
   padding: 14px 20px;
   text-decoration: none;
-  text-align: center;
+  text-align: var(--aling-center);
 }
 
 /* Change color on hover */
 .links a:hover {
   background-color: #ddd;
-  color: black;
+  color: var(--ng-color);
 }
 
 /*ROW, DIDE , MAIN*/
@@ -89,19 +88,19 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 .row__side {
   flex: 30%;
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: var(--padding);
 }
 
 /* Main column */
 .row__main {
   flex: 60%;
   background-color: white;
-  padding: 20px;
+  padding: var(--padding);
   height: 73vh;
 }
 
 .row__side_image{
-  background-color: black;
+  background-color: var(--ng-color);
   width: 60%;
   padding: 10px;
   height: 60%;
@@ -112,15 +111,15 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: var(--aling-center);
 }
 
 .row__Redes_Sociales a {
   text-decoration: none;
   margin: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: var(--aling-center);
+  align-items: var(--aling-center);
   overflow: hidden;
 }
 .row__Redes_Sociales__img {
@@ -129,8 +128,8 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 .description , .img{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: var(--aling-center);
+  align-items: var(--aling-center);
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -139,7 +138,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 .main{
  width: 100%;
- align-items: center;
+ align-items: var(--aling-center);
  padding-left: 110px;
  padding-right: 110px;
  background-color: whitesmoke;
@@ -150,14 +149,14 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 .main_links{
  display: flex;
  flex-direction: column;
- align-items: center;
+ align-items: var(--aling-center);
  margin-top: 220px;
  margin-bottom: 250px;
     
 }
 
 .main_links_pages{
-  text-align: center;
+  text-align: var(--aling-center);
   font-size: 24px;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -173,7 +172,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 /*FOOTER*/
 footer {
   padding: 8px;
-  text-align: center;
+  text-align: var(--aling-center);
   background: #ddd;
 }
 
@@ -199,9 +198,9 @@ footer {
 
 .list__lenguajes{
     display:inline-flex;
-    justify-content: center;
+    justify-content: var(--aling-center);
     flex-wrap: wrap;
-    align-items: center;
+    align-items: var(--aling-center);
     flex-direction: row;
     justify-content: flex-start;
     justify-content: space-around;
@@ -210,8 +209,8 @@ footer {
 .list h2{
  
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  align-items: var(--aling-center);
+  justify-content: var(--aling-center);
 
 }
 
@@ -220,9 +219,9 @@ footer {
 
 .list__leng_bd{
   display:inline-flex;
-  justify-content: center;
+  justify-content: var(--aling-center);
   flex-wrap: wrap;
-  align-items: center;
+  align-items: var(--aling-center);
   flex-direction: row;
   justify-content: flex-start;
   justify-content: space-around;
@@ -235,20 +234,20 @@ footer {
 
 .titulos{
   display: flex;
-  align-items: center;
+  align-items: var(--aling-center);
   flex-direction: row;
   flex-wrap: wrap;
   flex: 2;
   justify-content: space-around;
 }
-.titulos_box{
+.titulos__box{
   background-color: lightgrey;
   width: 310px;
   height: 240px;
   border: 1px solid green;
   padding: 10px;
   display: inline-flex;
-  align-items: center;
+  align-items: var(--aling-center);
   flex-wrap: wrap;
   flex: 1 1 20%;
   margin: 20px;
@@ -263,8 +262,8 @@ footer {
 .idiomas{
   height: 100vh;
   background-color: aquamarine;
-  justify-content: center;
-  align-items: center;
+  justify-content: var(--aling-center);
+  align-items: var(--aling-center);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -275,9 +274,9 @@ footer {
 .idiomas__list__tooltip .tooltip__tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: black;
+  background-color: var(--ng-color);
   color: #fff;
-  text-align: center;
+  text-align: var(--aling-center);
   border-radius: 6px;
   padding: 5px 0;
 
@@ -294,7 +293,7 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: var(--aling-center);
   width: 50%;
   border: 15px solid springgreen;
 }
@@ -306,12 +305,12 @@ footer {
 
 .experiencia_laboral{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: var(--aling-center);
+  align-items: var(--aling-center);
   flex-wrap: wrap;
   justify-content: space-around;
   margin-right: auto;
-  border: 10px solid black;
+  border: 10px solid var(--ng-color);
   height: 70vh;
 }
 
@@ -331,13 +330,13 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: var(--padding);
   }
 
   .contacto__titulo{
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: var(--aling-center);
+    align-content: var(--aling-center);
   }
 
 
@@ -355,7 +354,7 @@ input[type=text], textarea {
 input[type=submit] {
   background-color: dimgray;
   color: white;
-  padding: 12px 20px;
+  padding: 12px var(--padding);
   border: none;
   border-radius: 4px;
   cursor: pointer;
