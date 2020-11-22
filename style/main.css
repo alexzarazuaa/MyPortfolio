@@ -86,28 +86,28 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
+.row__side {
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
 }
 
 /* Main column */
-.main {
+.row__main {
   flex: 60%;
   background-color: white;
   padding: 20px;
   height: 73vh;
 }
 
-.image{
+.row__side_image{
   background-color: black;
   width: 60%;
   padding: 10px;
   height: 60%;
 }
 
-.Redes_Sociales{
+.row__Redes_Sociales{
   margin-top: 60px;
   display: flex;
   flex-direction: row;
@@ -115,7 +115,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
   justify-content: center;
 }
 
-.Redes_Sociales a {
+.row__Redes_Sociales a {
   text-decoration: none;
   margin: 20px;
   display: flex;
@@ -123,7 +123,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
   align-items: center;
   overflow: hidden;
 }
-.Redes_Sociales__img {
+.row__Redes_Sociales__img {
     width: 75px;
 }
 
@@ -134,8 +134,6 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
   flex-wrap: wrap;
   flex-direction: column;
 }
-
-
 
 
 
@@ -199,7 +197,7 @@ footer {
 
 
 
-.lenguajes{
+.list__lenguajes{
     display:inline-flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -220,7 +218,7 @@ footer {
 
 
 
-.leng_bd{
+.list__leng_bd{
   display:inline-flex;
   justify-content: center;
   flex-wrap: wrap;
